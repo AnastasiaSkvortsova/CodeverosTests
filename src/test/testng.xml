@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Local" parallel="tests" thread-count="10" verbose="2">
+    <parameter name="driverName" value="chrome"></parameter>
+    <test name="Test in Chrome">
+        <classes>
+            <class name="CucumberRunner" />
+        </classes>
+    </test>
+</suite>
